@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Flex 적용x</h2>
+  <ul class="no-flex_ul">
+    <li>카카오톡</li>
+    <li>인스타그램</li>
+    <li>트위터</li>
+    <li>페이스북</li>
+    <li>틱톡</li>
+  </ul>
+  <hr>
+
+  <h2>Flex 적용o</h2>
+  <a href="https://studiomeal.com/archives/197" target="_blank">정리 링크</a>
+  <div id="flex-property-list-wrap">
+    <ul id="flex-property-list">
+      <li id="flex-direction">
+        <span>flex-direction</span>
+        <input type=radio name="flex-direction" id="row">row(default)
+        <input type=radio name="flex-direction" id="row-reverse">row-reverse
+        <input type=radio name="flex-direction" id="column">column
+        <input type=radio name="flex-direction" id="column-reverse">column-reverse
+      </li>
+      <li id="flex-wrap">
+        <span>flex-wrap (row에서 창의 너비를 줄여보자)</span>
+        <input type=radio name="flex-wrap" id="nowrap">nowrap
+        <input type=radio name="flex-wrap" id="wrap">wrap
+      </li>
+      <li id="flex-flow">
+        <span>flex-flow (direction+wrap)</span> 
+      </li>
+      <li id="justify-content">
+        <span>justify-content</span>
+        <input type=radio name="justify-content" id="flex-start">flex-start
+        <input type=radio name="justify-content" id="flex-end">flex-end
+        <input type=radio name="justify-content" id="center">center
+        <input type=radio name="justify-content" id="space-between">space-between
+        <input type=radio name="justify-content" id="space-around">space-around
+        <input type=radio name="justify-content" id="space-evenly">space-evenly
+      </li>
+      <li id="align-items">
+        <span>align-items</span>
+        <input type=radio name="align-items" id="stretch">stretch
+        <input type=radio name="align-items" id="align_flex-start">flex-start
+        <input type=radio name="align-items" id="align_flex-end">flex-end
+        <input type=radio name="align-items" id="align_center">center
+      </li>
+      <li id="align-self">
+        <span>align-self</span>
+        <select name="sns" id="sns_select">
+          <option value="kakaotalk">카카오톡</option>
+          <option value="instagram">인스타그램</option>
+          <option value="twitter">트위터</option>
+          <option value="facebook">페이스북</option>
+          <option value="tictok">틱톡</option>
+        </select>
+        <input type=radio name="align-self" id="stretch">stretch
+        <input type=radio name="align-self" id="align_flex-start">flex-start
+        <input type=radio name="align-self" id="align_flex-end">flex-end
+        <input type=radio name="align-self" id="align_center">center
+      </li>
+    </ul>
+  </div>
+  
+ 
+  <ul id="flex_ul" class="colored_ul">
+    <li id="kakaotalk">카카오톡</li>
+    <li id="instagram">인스타그램</li>
+    <li id="twitter">트위터</li>
+    <li id="facebook">페이스북</li>
+    <li id="tictok">틱톡</li>
+  </ul>
+  <hr>
+
+  <h4>inline-Flex</h4>
+  <ul id="inline-flex_ul" class="colored_ul">
+    <li>카카오톡</li>
+    <li>인스타그램</li>
+    <li>트위터</li>
+    <li>페이스북</li>
+    <li>틱톡</li>
+  </ul>
+  <script src="app.js"></script>
+</body>
+</html>
