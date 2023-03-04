@@ -9,7 +9,7 @@
 </head>
 <body>
   <h2>Flex 적용x</h2>
-  <ul class="no-flex_ul">
+  <ul id="no-flex_ul" class="colored_ul">
     <li>카카오톡</li>
     <li>인스타그램</li>
     <li>트위터</li>
@@ -23,22 +23,22 @@
   <div id="flex-property-list-wrap">
     <ul id="flex-property-list">
       <li id="flex-direction">
-        <span>flex-direction</span>
+        <span class="container-flex">flex-direction</span>
         <input type=radio name="flex-direction" id="row">row(default)
         <input type=radio name="flex-direction" id="row-reverse">row-reverse
         <input type=radio name="flex-direction" id="column">column
         <input type=radio name="flex-direction" id="column-reverse">column-reverse
       </li>
       <li id="flex-wrap">
-        <span>flex-wrap (row에서 창의 너비를 줄여보자)</span>
+        <span class="container-flex">flex-wrap</span>
         <input type=radio name="flex-wrap" id="nowrap">nowrap
         <input type=radio name="flex-wrap" id="wrap">wrap
       </li>
       <li id="flex-flow">
-        <span>flex-flow (direction+wrap)</span> 
+        <span class="container-flex">flex-flow (direction+wrap)</span> 
       </li>
       <li id="justify-content">
-        <span>justify-content</span>
+        <span class="container-flex">justify-content</span>
         <input type=radio name="justify-content" id="flex-start">flex-start
         <input type=radio name="justify-content" id="flex-end">flex-end
         <input type=radio name="justify-content" id="center">center
@@ -47,15 +47,15 @@
         <input type=radio name="justify-content" id="space-evenly">space-evenly
       </li>
       <li id="align-items">
-        <span>align-items</span>
+        <span class="container-flex">align-items</span>
         <input type=radio name="align-items" id="stretch">stretch
         <input type=radio name="align-items" id="align_flex-start">flex-start
         <input type=radio name="align-items" id="align_flex-end">flex-end
         <input type=radio name="align-items" id="align_center">center
       </li>
       <li id="align-self">
-        <span>align-self</span>
-        <select name="sns" id="sns_select">
+        <span class="item-flex">align-self</span>
+        <select name="align-self_select" id="align-self_select">
           <option value="kakaotalk">카카오톡</option>
           <option value="instagram">인스타그램</option>
           <option value="twitter">트위터</option>
@@ -67,6 +67,25 @@
         <input type=radio name="align-self" id="align_flex-end">flex-end
         <input type=radio name="align-self" id="align_center">center
       </li>
+      <li id="flex-grow">
+        <span class="item-flex">flex-grow&nbsp;</span>
+        카카오톡<input type="number" min="0" value="0" step="0.1" id="flex-grow_kakaotalk">&nbsp;
+        인스타그램<input type="number" min="0" value="0"  id="flex-grow_instagram">&nbsp;
+        트위터<input type="number" min="0" value="0"  id="flex-grow_twitter">&nbsp;
+        페이스북<input type="number" min="0" value="0"  id="flex-grow_facebook">&nbsp;
+        틱톡<input type="number" min="0" value="0"  id="flex-grow_tictok">&nbsp;
+        <button type="button" id="flex-grow_apply">apply</button>
+      </li>
+      <li id="flex-shrink">
+        <span class="item-flex">flex-shrink</span>
+        카카오톡<input type="number" min="0" step="0.1" value="0"  id="flex-shrink_kakaotalk">&nbsp;
+        인스타그램<input type="number" min="0" value="0"  id="flex-shrink_instagram">&nbsp;
+        트위터<input type="number" min="0" value="0"  id="flex-shrink_twitter">&nbsp;
+        페이스북<input type="number" min="0" value="0"  id="flex-shrink_facebook">&nbsp;
+        틱톡<input type="number" min="0" value="0"  id="flex-shrink_tictok">&nbsp;
+        <button type="button" id="flex-shrink_apply">apply</button>
+      </li>
+      
     </ul>
   </div>
   

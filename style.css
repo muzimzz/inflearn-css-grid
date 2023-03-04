@@ -32,16 +32,12 @@ body {
   display: inline-flex;
 }
 
-.no-flex_ul {
-  height: 100%;
-  padding: 5px;
-  background-color: pink;
-  border: 1px solid red;
-  list-style-type: none;
+#no-flex_ul li {
+  border: none;
 }
 
 .colored_ul {
-  height: 100px;
+  height: 150px;
   padding: 5px;
   background-color: pink;
   border: 1px solid red;
@@ -49,11 +45,33 @@ body {
 }
 
 .colored_ul li {
-  width: 150px;
+
   border: 1px solid yellowgreen; 
 }
 
 
-#flex-property-list span {
+#flex-property-list span.container-flex{
   color: tomato;
 }
+
+#flex-property-list span.item-flex {
+  color: steelblue;
+}
+
+#flex-grow input[type="number"],
+#flex-shrink input[type="number"] {
+  width: 80px;
+  height: 23px;
+  vertical-align: bottom;
+}
+
+li button[type="button"] {
+  width: 60px;
+  height: 23px;
+}
+
+/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
