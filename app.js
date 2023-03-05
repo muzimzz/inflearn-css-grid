@@ -75,7 +75,6 @@ bt_alignSelf_center.addEventListener("click", () => {paintAlignSelf("center")});
 
 // flex-grow
 const flexGrow = document.querySelector("#flex-grow");
-const flexGrow_select = flexGrow.querySelector("#flex-grow_select");
 const input_flexGrow_kakaotalk = flexGrow.querySelector("#flex-grow_kakaotalk");
 const input_flexGrow_instagram = flexGrow.querySelector("#flex-grow_instagram");
 const input_flexGrow_twitter = flexGrow.querySelector("#flex-grow_twitter");
@@ -95,7 +94,6 @@ bt_flexGrow_apply.addEventListener("click", () => {paintFlexGrow();});
 
 // flex-shrink
 const flexShrink = document.querySelector("#flex-shrink");
-const flexShrink_select = flexShrink.querySelector("#flex-shrink_select");
 const input_flexShrink_kakaotalk = flexShrink.querySelector("#flex-shrink_kakaotalk");
 const input_flexShrink_instagram = flexShrink.querySelector("#flex-shrink_instagram");
 const input_flexShrink_twitter = flexShrink.querySelector("#flex-shrink_twitter");
@@ -103,7 +101,7 @@ const input_flexShrink_facebook = flexShrink.querySelector("#flex-shrink_faceboo
 const input_flexShrink_tictok = flexShrink.querySelector("#flex-shrink_tictok");
 const bt_flexShrink_apply = flexShrink.querySelector("#flex-shrink_apply");
 // event function
-function paintflexShrink() {
+function paintFlexShrink() {
   kakaotalk_li.style.flexShrink = input_flexShrink_kakaotalk.value;
   instagram_li.style.flexShrink = input_flexShrink_instagram.value;
   twitter_li.style.flexShrink = input_flexShrink_twitter.value;
@@ -111,4 +109,34 @@ function paintflexShrink() {
   tictok_li.style.flexShrink = input_flexShrink_tictok.value;
 }
 // event
-bt_flexShrink_apply.addEventListener("click", () => {paintflexShrink();});
+bt_flexShrink_apply.addEventListener("click", () => {paintFlexShrink();});
+
+// flex-basis
+const flexBasis = document.querySelector("#flex-basis");
+const input_flexBasis_twitter = flexBasis.querySelector("#flex-basis_twitter");
+const bt_flexBasis_apply = flexBasis.querySelector("#flex-basis_apply");
+// event function
+function paintFlexBasis() {
+  twitter_li.style.flexBasis = input_flexBasis_twitter.value + "px";
+}
+// event
+bt_flexBasis_apply.addEventListener("click", () => {paintFlexBasis();});
+
+// order
+const order = document.querySelector("#order");
+const input_order_kakaotalk = order.querySelector("#order_kakaotalk");
+const input_order_instagram = order.querySelector("#order_instagram");
+const input_order_twitter = order.querySelector("#order_twitter");
+const input_order_facebook = order.querySelector("#order_facebook");
+const input_order_tictok = order.querySelector("#order_tictok");
+const bt_order_apply = order.querySelector("#order_apply");
+// event function
+function paintOrder() {
+  kakaotalk_li.style.order = input_order_kakaotalk.value;
+  instagram_li.style.order = input_order_instagram.value;
+  twitter_li.style.order = input_order_twitter.value;
+  facebook_li.style.order = input_order_facebook.value;
+  tictok_li.style.order = input_order_tictok.value;
+}
+// event
+bt_order_apply.addEventListener("click", () => {paintOrder();});

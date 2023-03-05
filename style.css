@@ -58,8 +58,7 @@ body {
   color: steelblue;
 }
 
-#flex-grow input[type="number"],
-#flex-shrink input[type="number"] {
+#flex-property-list li input[type="number"] {
   width: 80px;
   height: 23px;
   vertical-align: bottom;
